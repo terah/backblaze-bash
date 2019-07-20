@@ -15,7 +15,7 @@ if [ -s ~/.B2 ]
     then
         source ~/.B2
     else
-        echo "Die Konfigurationsdatei .B2 ist nicht vorhanden"
+        echo "The configuration file ~/.B2 does not exist"
         safeExit        
 fi
 
@@ -101,7 +101,7 @@ done
 
 if [ "$1" == '' ]
     then
-        echo "Bitte eine Lokale-Datei angeben!"
+        echo "Please specify a local file!"
         safeExit
 fi
 
@@ -116,6 +116,6 @@ fi
 # Run your script
 mainScript $1 $REMOTE_PATH $3 $4 $5
 
-# Exit cleanlyd
+# Exit cleanly
 safeExit
 
